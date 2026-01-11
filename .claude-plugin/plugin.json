@@ -7,9 +7,6 @@
     "email": "arjayads@gmail.com"
   },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arjayads/git-mem"
-  },
+  "repository": "https://github.com/arjayads/git-mem",
   "keywords": ["git", "memory", "persistence", "context", "session"]
 }
