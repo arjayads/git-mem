@@ -2,8 +2,7 @@
   "hooks": {
     "SessionStart": [
       {
-        "name": "load-git-context",
-        "description": "Automatically load previous session context from git",
+        "matcher": "*",
         "hooks": [
           {
             "type": "command",
