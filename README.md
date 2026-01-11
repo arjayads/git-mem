@@ -163,7 +163,7 @@ npm install -g @anthropic-ai/claude-code
 # Install plugin (same as Linux/Mac)
 claude
 /plugin marketplace add arjayads/git-mem
-/plugin install git-memory
+/plugin install git-mem
 ```
 
 ## Troubleshooting
