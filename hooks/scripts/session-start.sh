@@ -1,6 +1,8 @@
 #!/bin/bash
 # Auto-load context at Claude Code session start
-# This runs automatically when Claude Code starts in a project
+
+# NOTE: This runs in the USER'S project directory, not the plugin directory
+# Use absolute paths or check working directory
 
 echo "🔄 Loading previous session context..."
 echo ""
@@ -24,9 +26,9 @@ else
     echo ""
 fi
 
-# Show recent activity
+# Show recent activity (suppress errors if no commits)
 echo "=== Recent Commits ==="
-if git log -1 --oneline 2>/dev/null > /dev/null; then
+if git log -1 --oneline > /dev/null 2>&1; then
     git log -3 --oneline 2>/dev/null
 else
     echo "No commits yet"
@@ -46,8 +48,11 @@ fi
 
 # Show helpful commands
 echo "💡 Memory Commands:"
-echo "  /git-memory:recall       - Full context reload"
-echo "  /git-memory:remember     - Save this session"
-echo "  /git-memory:checkpoint   - Quick save point"
-echo "  /git-memory:context      - Show current state"
+echo "  /git-mem:recall       - Full context reload"
+echo "  /git-mem:remember     - Save this session"
+echo "  /git-mem:checkpoint   - Quick save point"
+echo "  /git-mem:context      - Show current state"
 echo ""
+
+# Exit successfully
+exit 0
