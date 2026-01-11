@@ -12,7 +12,4 @@
     "url": "https://github.com/arjayads/git-mem"
   },
   "keywords": ["git", "memory", "persistence", "context", "session"],
-  "engines": {
-    "claude-code": ">=1.0.33"
-  }
 }

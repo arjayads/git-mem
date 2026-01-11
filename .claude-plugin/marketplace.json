@@ -1,0 +1,24 @@
+{
+  "name": "git-mem-marketplace",
+  "owner": {
+    "name": "Arjay",
+    "email": "arjayads@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "git-memory",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/arjayads/git-mem.git"
+      },
+      "description": "Persistent memory system using git commits. Auto-loads previous session on startup.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Arjay"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/arjayads/git-mem",
+      "repository": "https://github.com/arjayads/git-mem"
+    }
+  ]
+}
