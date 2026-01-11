@@ -1,0 +1,17 @@
+{
+  "name": "Git Memory Plugin Marketplace",
+  "description": "Persistent memory for Claude Code using git commits",
+  "version": "1.0.0",
+  "plugins": {
+    "git-memory": {
+      "name": "Git Memory",
+      "description": "Save and restore Claude Code session context using git commits. Auto-loads previous session on startup.",
+      "source": "https://github.com/arjayads/git-mem",
+      "version": "1.0.0",
+      "author": "Arjay",
+      "categories": ["Productivity", "Git", "Memory", "Context"],
+      "homepage": "https://github.com/arjayads/git-mem",
+      "repository": "https://github.com/arjayads/git-mem"
+    }
+  }
+}
